@@ -18,7 +18,7 @@ class ws{
         $this->_ws = new swoole_websocket_server($config['websocket']['host'],$config['websocket']['port']);
         $this->_ws->set([
                 'daemonize'=>1,
-                'log_file'=>'/data/swoole-demo/chatroom/log/debug.log',
+                'log_file'=>'/data/chatroom/log/debug.log',
         ]);
         $this->_ws->on('open',array($this,'onOpen'));
         $this->_ws->on('message',array($this,'onMessage'));

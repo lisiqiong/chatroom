@@ -116,3 +116,78 @@ client 7 closed
 client 9 closed
  [2018-08-04 09:58:43 *18193.1]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 32 byte failed, because connection[fd=9] is closed.
 成功连接websocket服务 12
+成功连接websocket服务 1
+成功连接websocket服务 2
+成功连接websocket服务 3
+/data/chatroom/lib/dispatcher.php:12:
+class swoole_websocket_frame#5 (4) {
+  public $fd =>
+  int(1)
+  public $finish =>
+  bool(true)
+  public $opcode =>
+  int(1)
+  public $data =>
+  string(54) "{"chattype":"publicchat","chatto":"1","chatmsg":"333"}"
+}
+client 2 closed
+ [2018-08-04 10:11:01 *18981.0]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 32 byte failed, because connection[fd=2] is closed.
+成功连接websocket服务 4
+/data/chatroom/lib/dispatcher.php:12:
+class swoole_websocket_frame#5 (4) {
+  public $fd =>
+  int(4)
+  public $finish =>
+  bool(true)
+  public $opcode =>
+  int(1)
+  public $data =>
+  string(54) "{"chattype":"publicchat","chatto":"1","chatmsg":"333"}"
+}
+/data/chatroom/lib/dispatcher.php:12:
+class swoole_websocket_frame#5 (4) {
+  public $fd =>
+  int(4)
+  public $finish =>
+  bool(true)
+  public $opcode =>
+  int(1)
+  public $data =>
+  string(55) "{"chattype":"publicchat","chatto":"1","chatmsg":"2323"}"
+}
+/data/chatroom/lib/dispatcher.php:12:
+class swoole_websocket_frame#5 (4) {
+  public $fd =>
+  int(1)
+  public $finish =>
+  bool(true)
+  public $opcode =>
+  int(1)
+  public $data =>
+  string(55) "{"chattype":"publicchat","chatto":"1","chatmsg":"2232"}"
+}
+client 3 closed
+ [2018-08-04 10:11:13 *18982.1]	NOTICE	swFactoryProcess_finish (ERROR 1004): send 32 byte failed, because connection[fd=3] is closed.
+成功连接websocket服务 5
+/data/chatroom/lib/dispatcher.php:12:
+class swoole_websocket_frame#6 (4) {
+  public $fd =>
+  int(5)
+  public $finish =>
+  bool(true)
+  public $opcode =>
+  int(1)
+  public $data =>
+  string(54) "{"chattype":"publicchat","chatto":"1","chatmsg":"333"}"
+}
+/data/chatroom/lib/dispatcher.php:12:
+class swoole_websocket_frame#5 (4) {
+  public $fd =>
+  int(4)
+  public $finish =>
+  bool(true)
+  public $opcode =>
+  int(1)
+  public $data =>
+  string(53) "{"chattype":"publicchat","chatto":"1","chatmsg":"ok"}"
+}
