@@ -1,13 +1,11 @@
 <?php
-require("./lib/config.class.php");
-require("./lib/dispatcher.php");
-require("./lib/function.php");
-require("./lib/mysqli.class.php");
 /***
  *@desc websocket类
  *
  **/
-class ws{
+//namespace Libs\Server;
+require_once("./Libs/Common/Dispatcher.class.php");
+class Server{
     public $_ws;
     public $_conf;
     /**
@@ -16,7 +14,7 @@ class ws{
      ***/
     public function __construct($config){
         $this->_conf = $config;
-        $this->_ws = new swoole_websocket_server($config['websocket']['host'],$config['websocket']['port']);
+        $this->_ws = new \Swoole\Websocket\Server($config['websocket']['host'],$config['websocket']['port']);
         $this->_ws->set([
                 'daemonize'=>1,
                 'log_file'=>'/data/chatroom/log/debug.log',
@@ -71,7 +69,4 @@ class ws{
 
 
 }
-$c = new Config();
-$config = $c->getAll();
-new ws($config);
 

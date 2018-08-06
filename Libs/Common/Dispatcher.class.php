@@ -2,17 +2,18 @@
 /**
  * 用于实现公聊私聊的特定发送服务。
  * */
+
+//namespace Libs\Common;
 class Dispatcher{
 
     const CHAT_TYPE_PUBLIC = "publicchat";
     const CHAT_TYPE_PRIVATE = "privatechat";
 
     public function __construct($frame) {
+        //echo $frame,'teeeee';
         $this->frame = $frame;
         var_dump($this->frame);
         $this->clientid = intval($this->frame->fd);
-        //$this->remote_addr = strval($this->frame->server['remote_addr']);
-        //$this->remote_port = intval($this->frame->server['remote_port']);
     }
 
     public function parseChatData() {

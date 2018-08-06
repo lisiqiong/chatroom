@@ -55,6 +55,7 @@ function connect() {
     //ws.onclose = function(event) {echo("#chatrecord", event);}
     //ws.onerror = function(event) {echo("#chatrecord", event);}
     ws.onmessage = function(event) {
+        console.log(event);
         echo("#chatrecord", event.data);
     }
 }

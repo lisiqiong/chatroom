@@ -1,5 +1,10 @@
 <?php
 
+/**
+ 
+*@desc 数据库操作类
+ ***/
+namespace Libs\Common;
 class MysqliDb{
     //私有的属性
     private static $dbcon=false;

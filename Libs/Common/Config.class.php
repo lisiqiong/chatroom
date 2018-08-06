@@ -6,6 +6,7 @@
  *  2.判断配置是否是否存在
  *  3.缓存配置
  */
+namespace Libs\Common;
 class Config
 {
     /**
