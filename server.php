@@ -1,7 +1,8 @@
 <?php
-require('../conf/config.php');
-require("../lib/mysqli.class.php");
-require("../lib/dispatcher.php");
+require("./lib/config.class.php");
+require("./lib/dispatcher.php");
+require("./lib/function.php");
+require("./lib/mysqli.class.php");
 /***
  *@desc websocket类
  *
@@ -70,5 +71,7 @@ class ws{
 
 
 }
+$c = new Config();
+$config = $c->getAll();
 new ws($config);
 
